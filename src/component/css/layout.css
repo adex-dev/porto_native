@@ -1,0 +1,38 @@
+/* layout.css */
+header,
+footer {
+  background: var(--theme-bg);
+}
+main {
+ flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+}
+section{
+  min-width: 100%;
+}
+p{
+  line-height: 1.2rem; 
+  letter-spacing: 0.5;
+}
+
+#navigation {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  row-gap: 1rem;
+  justify-items: center;
+  margin-top: 5px;
+}
+#navigation a {
+  border-right: 1px dashed #e5e7eb;
+  padding-right: 1rem;
+  margin-right: 0.5rem;
+}
+
+#navigation a:last-child {
+  border-right: none;
+  padding-right: 1;
+  margin-right: 0;
+}

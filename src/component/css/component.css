@@ -1,0 +1,46 @@
+/* components.css */
+
+.brands {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: max-content;
+  gap: 1.5rem;
+  unicode-bidi: isolate;
+  margin-bottom: 4rem;
+}
+.logosvg {
+  width: 2.5em;
+  height: 3em;
+}
+.headerboxs {
+  display: flex;
+  flex-direction: column;
+  column-gap: 0.2rem;
+}
+.grayscale {
+  filter: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+}
+.sosmedbox {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+.subtitlel-long {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.greeting {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: hsl(var(--theme-accent-2) / 1);
+}
