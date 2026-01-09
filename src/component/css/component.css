@@ -1,4 +1,17 @@
 /* components.css */
+.logo{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.darkmode {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  color: var(--theme-darkmode);
+}
 
 .brands {
   font-size: 1.25rem;
@@ -26,13 +39,13 @@ header {
 }
 .grayscale {
   filter: grayscale(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
-    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
-    var(--tw-sepia) var(--tw-drop-shadow);
 }
 .sosmedbox {
+  margin-bottom: 2rem;
   padding-top: 3rem;
   padding-bottom: 1rem;
+  display: inline-flex;
+  gap: 1rem;
 }
 .subtitlel-long {
   padding-top: 1rem;
@@ -43,4 +56,67 @@ header {
   line-height: 2rem;
   font-weight: 600;
   color: hsl(var(--theme-accent-2) / 1);
+}
+.title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: hsl(var(--theme-accent-2) / 1);
+}
+.headline {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: hsl(var(--theme-accent-2) / 2);
+}
+.sosmed-header {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.sosmed-header > svg {
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+  color: inherit;
+  transition: 1s ease-in-out;
+}
+.sosmed-header > svg:hover {
+  padding: 0px;
+  cursor: pointer;
+}
+article > h3 {
+  font-size: 1.2rem;
+  color: var(--theme-text);
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+article > p {
+  font-size: 14px;
+  line-height: 1.2rem;
+  text-indent: 5;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.readmore {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.readmore > a {
+  color: var(--theme-link);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  outline: 1px solid transparent;
+  outline-offset: 2px;
+  transition: outline-color 1s ease-in-out;
+  transition: border-bottom 1s ease-out;
+  font-size: 14px;
+  text-align: center;
+  padding: 2px;
+}
+
+.readmore > a:hover {
+  outline-color: currentColor;
+  border-bottom: 1px solid transparent;
 }

@@ -1,15 +1,15 @@
-import Footer from "./screen/Footer.tsx";
+import { Routes, Route } from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
 import Home from "./screen/Home.tsx";
-import Headers from "./screen/Headers.tsx";
 function App() {
   return (
-    <>
-      <Headers />
-      <main>
-        <Home />
-      </main>
-      <Footer />
-    </>
+    <Routes>
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        {/* <Route path="/about" element={<About />} /> */}
+      </Route>
+    </Routes>
   );
 }
 

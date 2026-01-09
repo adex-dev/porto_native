@@ -1,17 +1,23 @@
 /* base.css */
 :root {
   color-scheme: light;
-  --theme-bg: 0deg 0% 98%;
+  --theme-bg: hsl(0,0%,98%);
   --bg-opacity: 1;
-  --theme-text: 203deg 11% 15%;
-  --theme-accent: 169deg 40% 36%;
+  --theme-text: hsl(203,11%, 15%);
+  --theme-darkmode: 	hsl(37, 90%, 51%);
+  --theme-accent: hsl(169,40%,36%);
+  --theme-link: hsl(172,18%,41%);
+  --theme-navborder: hsl(203, 11%,15%);
 }
 
 :root.dark {
   color-scheme: dark;
-  --theme-bg: 210deg 6% 12%;
-  --theme-text: 220deg 3% 79%;
-  --theme-accent: 91deg 13% 63%;
+  --theme-darkmode: hsl(91, 13%, 63%);
+  --theme-navborder: hsl(91, 13%, 63%);
+  --theme-bg: hsl(210, 6%, 12%);
+  --theme-text: hsl(220, 3%, 79%);
+  --theme-accent: hsl(91, 13%, 63%);
+  --theme-link: hsl(91, 13%, 63%);
 }
 @font-face {
   font-family: "BlinkMacSystemFont";
@@ -90,7 +96,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--theme-link);
   text-decoration: none;
   transition: border-color 200ms ease;
   padding-right: 1rem;

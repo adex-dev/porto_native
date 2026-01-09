@@ -1,20 +1,44 @@
+import Twitter from "../assets/icon/twitter.svg?react";
+import Github from "../assets/icon/github.svg?react";
+import Instagram from "../assets/icon/instagram.svg?react";
+import HomeStudy from "../component/HomeStudi.tsx";
 export default function Home() {
   return (
-    <section aria-labelledby="home-title">
-      <h2 className="greeting" id="home-title">Hi there!</h2>
-      <p className="subtitlel-long">
-        I’m Akmad Nudin, a software developer focused on building scalable
-        backend and web systems. My work spans system design, API development,
-        and application delivery for real-world use cases.<br/> Here you’ll find case
-        studies, technical projects, and my professional background.
-      </p>
-      <p className="subtitle-short">
-        I build web, backend, and Android applications with a strong focus on system reliability.
-      </p>
-       <div className="sosmedbox" aria-label="Social Media">
-        <p>Find me on</p>
-        <div className="sosmed-header"></div>
-      </div>
-    </section>
+    <>
+      <section aria-labelledby="home-title">
+        <h2 className="greeting" id="home-title">
+          Hi there!
+        </h2>
+        <p className="subtitlel-long">
+          I’m Akmad Nudin, a software developer focused on building scalable
+          backend and web systems. My work spans system design, API development,
+          and application delivery for real-world use cases.
+          <br /> Here you’ll find case studies, technical projects, and my
+          professional background.
+        </p>
+        <p className="subtitle-short">
+          I build web, backend, and Android applications with a strong focus on
+          system reliability.
+        </p>
+        <div className="sosmedbox" aria-label="Social Media">
+          <p>Find me on</p>
+          <div className="sosmed-header">
+            <Twitter />
+            <Github />
+            <Instagram />
+          </div>
+        </div>
+      </section>
+      <section id="case-studies">
+        <h2 className="title">Case Studies</h2>
+        <p className="headline">
+          End-to-end projects focused on real-world use cases.
+        </p>
+        <HomeStudy title="POS System" description="Web-based POS system with separated backend services for transaction
+        management and <strong>reporting</strong>." link="/case-studies/pos" stack="CodeIgniter · Flask · MySQL"/>
+        <HomeStudy title="Mobile POS Application" description="Android application used as a client app connected to backend APIs
+            for daily operations." link="/case-studies/mobile-pos" stack="Android · Kotlin · REST API"/>
+      </section>
+    </>
   );
 }
