@@ -6,7 +6,7 @@ interface HomestudyProps{
 }
 export default function HomeStudy({title,description,link,stack}: HomestudyProps) {
   return (
-    <article class="case-study">
+    <article className="case-study">
       <h3>{title}</h3>
     <p dangerouslySetInnerHTML={{ __html: description }} />
       <p className="stack">{stack}</p>

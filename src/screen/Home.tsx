@@ -2,6 +2,7 @@ import Twitter from "../assets/icon/twitter.svg?react";
 import Github from "../assets/icon/github.svg?react";
 import Instagram from "../assets/icon/instagram.svg?react";
 import HomeStudy from "../component/HomeStudi.tsx";
+import Services from "../component/Services.tsx";
 export default function Home() {
   return (
     <>
@@ -34,10 +35,79 @@ export default function Home() {
         <p className="headline">
           End-to-end projects focused on real-world use cases.
         </p>
-        <HomeStudy title="POS System" description="Web-based POS system with separated backend services for transaction
-        management and <strong>reporting</strong>." link="/case-studies/pos" stack="CodeIgniter · Flask · MySQL"/>
-        <HomeStudy title="Mobile POS Application" description="Android application used as a client app connected to backend APIs
-            for daily operations." link="/case-studies/mobile-pos" stack="Android · Kotlin · REST API"/>
+        <HomeStudy
+          title="POS System"
+          description="Web-based POS system with separated backend services for transaction
+        management and <strong>reporting</strong>."
+          link="/case-studies/pos"
+          stack="CodeIgniter · Flask · MySQL"
+        />
+        <HomeStudy
+          title="Mobile POS Application"
+          description="Android application used as a client app connected to backend APIs
+            for daily operations."
+          link="/case-studies/mobile-pos"
+          stack="Android · Kotlin · REST API"
+        />
+      </section>
+      <section id="services">
+        <header>
+          <h2 className="title">What I Do</h2>
+        </header>
+        <div className="service-list">
+          <Services
+            title="Web Applications"
+            description="Business systems, admin dashboards, and internal tools."
+          />
+          <Services
+            title="Backend & APIs"
+            description="REST APIs, data processing, and system integration."
+          />
+          <Services
+            title="Android Applications"
+            description="Operational and client-facing Android apps."
+          />
+        </div>
+      </section>
+      <section id="process">
+        <header>
+          <h2 className="title">How I Work</h2>
+        </header>
+        <ol className="process-list">
+          <li>Understand the business problem and workflow</li>
+          <li>Design system architecture and API contracts</li>
+          <li>Build, test, and iterate</li>
+          <li>Deliver and provide support</li>
+        </ol>
+      </section>
+      <section id="experience">
+        <h2 className="title">Professional Experience</h2>
+        <ul className="experience-list">
+          <li>
+            <a href="#">
+              <strong>Company A</strong> — Programmer (2 years) {'->'}
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section id="tech-stack">
+        <header>
+          <h2 className="title">Tech Stack</h2>
+        </header>
+        <ul className="techstack-list">
+          <li>
+            <strong>Backend:</strong> Java (current focus), Python / Flask
+          </li>
+          <li>
+            <strong>Web:</strong> CodeIgniter, HTML, CSS
+          </li>
+          <li>
+            <strong>Mobile:</strong> Android (Kotlin, Jetpack Compose)
+          </li>
+          <li>
+            <strong>Database:</strong> MySQL, PostgreSQL
+          </li>
+        </ul>
       </section>
     </>
   );

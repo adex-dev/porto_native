@@ -7,4 +7,7 @@
    .container {
     padding: 0.75rem;
   }
+  section{
+    width: 100%;
+  }
 }

@@ -67,6 +67,7 @@ header {
   font-size: 1rem;
   line-height: 1.4rem;
   color: hsl(var(--theme-accent-2) / 2);
+  padding-left: 0.5rem;
 }
 .sosmed-header {
   display: flex;
@@ -119,4 +120,44 @@ article > p {
 .readmore > a:hover {
   outline-color: currentColor;
   border-bottom: 1px solid transparent;
+}
+#case-studies >article{
+  padding-left: 0.5rem;
+}
+#services,#process{
+  margin-top: 2rem;
+}
+.service-list{
+  margin-top: -3.5rem;
+  padding-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.process-list{
+  margin-top: -3.5rem;
+  list-style-type: disc;
+  padding-left: 0.5rem;
+}
+.process-list > li:nth-child(0) {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.process-list > li {
+  padding-bottom: 1rem;
+}
+#experience{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.experience-list,.techstack-list{
+  list-style: decimal;
+  padding-left: 0.9rem;
+  padding-top: 1rem;
+}
+.experience-list > li,.techstack-list > li {
+  padding-bottom: 1rem;
+}
+#tech-stack > header{
+    margin-bottom: 0.2rem;
 }
