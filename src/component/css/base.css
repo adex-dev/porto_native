@@ -8,6 +8,7 @@
   --theme-accent: hsl(169,40%,36%);
   --theme-link: hsl(172,18%,41%);
   --theme-navborder: hsl(203, 11%,15%);
+  --theme-accent-2: hsl(30,15%,15%);
 }
 
 :root.dark {
@@ -18,6 +19,7 @@
   --theme-text: hsl(220, 3%, 79%);
   --theme-accent: hsl(91, 13%, 63%);
   --theme-link: hsl(91, 13%, 63%);
+  --theme-accent-2: hsl(91, 13%, 63%);
 }
 @font-face {
   font-family: "BlinkMacSystemFont";
@@ -69,7 +71,6 @@ html {
 html body  {
   margin-left: auto;
   margin-right: auto;
-  max-width: 48rem;
   opacity: 1;
   background-color: hsl(var(--theme-bg) / var(--bg-opacity));
   font-family: ui-monospace, "SFMono-Regular", "Menlo", "Monaco", "consolas",
@@ -86,13 +87,11 @@ body {
   line-height: inherit;
 }
 #root{
-   display: flex;
+  position: relative;
+  display: flex;
   flex-direction: column;
   min-height: 100vh;
   min-height: 100dvh;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 4rem;
 }
 
 a {

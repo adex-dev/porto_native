@@ -161,3 +161,26 @@ article > p {
 #tech-stack > header{
     margin-bottom: 0.2rem;
 }
+.contentloading{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  height: 100dvh;
+}
+.badge{
+  background-color: var(--theme-accent);
+  margin-top: 1rem;
+  padding: 2px;
+  font-size: 12px;
+  border-radius: 10%;
+  color: var(--theme-bg);
+  width: max-content;
+}
+.stack{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}

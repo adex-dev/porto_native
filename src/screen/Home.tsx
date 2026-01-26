@@ -40,14 +40,14 @@ export default function Home() {
           description="Web-based POS system with separated backend services for transaction
         management and <strong>reporting</strong>."
           link="/case-studies/pos"
-          stack="CodeIgniter · Flask · MySQL"
+          stack="CodeIgniter,Flask,MySQL"
         />
         <HomeStudy
           title="Mobile POS Application"
           description="Android application used as a client app connected to backend APIs
             for daily operations."
           link="/case-studies/mobile-pos"
-          stack="Android · Kotlin · REST API"
+          stack="Android,Kotlin,REST API"
         />
       </section>
       <section id="services">
@@ -108,6 +108,13 @@ export default function Home() {
             <strong>Database:</strong> MySQL, PostgreSQL
           </li>
         </ul>
+      </section>
+      <section id="contact">
+        <header>
+          <h2 className="title">Let’s Work Together</h2>
+          <p>Looking to build or improve a system? Let’s discuss your project.</p>
+        </header>
+         <a href="mailto:youremail@example.com" className="btn-primary">Get in Touch</a>
       </section>
     </>
   );

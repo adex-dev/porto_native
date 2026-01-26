@@ -23,7 +23,7 @@ export default function Headers() {
 
 
   return (
-    <header>
+    <header className="mainheader">
       <img src={brand} alt="logo" className="logosvg" onClick={() => (window.location.href = "/")} />
       <div className="headerboxs">
         <div className="logo">
