@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import MainLayout from "./layouts/MainLayout";
 import Home from "./screen/Home.tsx";
 import CaseStudies from "./screen/CaseStudies.tsx";
+import CaseStudiesDetail from "./screen/CaseStudiesDetail.tsx";
 import LoadingLayout from "./layouts/LoadingLayout";
 function App() {
   // const [loading] = useState(true)
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/studies" element={<CaseStudies />} />
+            <Route path="/case-studies/:slug" element={<CaseStudiesDetail />} />
             {/* <Route path="/about" element={<About />} /> */}
           </Route>
         </Routes>

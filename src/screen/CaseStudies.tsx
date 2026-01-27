@@ -1,3 +1,4 @@
+// function untuk screen studies
 
 import HomeStudy from "../component/HomeStudi.tsx";
 export default function CaseStudies() {

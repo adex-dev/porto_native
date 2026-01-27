@@ -1,3 +1,4 @@
+// file function untuk mengambil data Home
 import { HomeResponse } from "../types/HomeTypes";
 
 export async function getHomeData(): Promise<HomeResponse> {

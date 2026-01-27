@@ -9,10 +9,12 @@
   --theme-link: hsl(172,18%,41%);
   --theme-navborder: hsl(203, 11%,15%);
   --theme-accent-2: hsl(30,15%,15%);
+  --theme-markdown: hsl(0,0%,98%);
 }
 
 :root.dark {
   color-scheme: dark;
+   --theme-markdown: hsl(203,11%, 15%);
   --theme-darkmode: hsl(91, 13%, 63%);
   --theme-navborder: hsl(91, 13%, 63%);
   --theme-bg: hsl(210, 6%, 12%);
