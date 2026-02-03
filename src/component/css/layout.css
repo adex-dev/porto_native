@@ -1,6 +1,6 @@
 /* layout.css */
 footer {
-  background: var(--theme-bg);
+  color: var(--theme-text);
 }
 main {
  flex: 1 0 auto;

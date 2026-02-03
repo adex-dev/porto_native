@@ -8,7 +8,7 @@ import "highlight.js/styles/github-dark.css";  // dark
 import { useState,useEffect } from "react";
 import CodeBlock from "../component/CodeBlock";
 import { useParams } from "react-router-dom";
-export default function CaseStudiesDetail() {
+export default function ProjectsDetail() {
     // const { slug } = useParams();
     const [content, setContent] = useState("");
     const url ="/sample.md"
