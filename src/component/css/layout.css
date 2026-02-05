@@ -3,6 +3,8 @@ footer {
   color: var(--theme-text);
 }
 main {
+  min-height: 40vh;
+  min-height: 40dvh;
  flex: 1 0 auto;
 }
 footer {
@@ -62,6 +64,7 @@ article{
   margin-bottom: 0.5rem !important;
 }
 .boxmain{
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   max-width: 48rem;

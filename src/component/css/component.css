@@ -278,3 +278,34 @@ article > p {
 .code-block:hover .code-header {
   background: rgba(0, 0, 0, 0.6);
 }
+.box-experience{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.title-experience {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: hsl(var(--theme-accent-2) / 1);
+}
+.period-experience{
+  font-size: 0.6rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: hsl(var(--theme-accent-2) / 1);
+}
+.main-experience{
+  margin-bottom: 3rem;
+}
+.description-experience{
+  padding-left: 3px;
+  text-align: justify;
+  width: 100%;
+  font-size: 12px;
+  line-height: 2rem;
+  font-weight: 300;
+}
