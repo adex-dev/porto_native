@@ -16,4 +16,5 @@ export default defineConfig({
     }),
     svgr()
   ],
+  base: "/porto_native/",
 });
