@@ -11,7 +11,7 @@ import CodeBlock from "../component/CodeBlock";
 export default function CaseStudiesDetail() {
     // const { slug } = useParams();
     const [content, setContent] = useState("");
-    const url ="/porto_native/#/sample.md"
+    const url = `${import.meta.env.BASE_URL}sample.md`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.text())
