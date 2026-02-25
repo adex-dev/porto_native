@@ -26,8 +26,8 @@ export default function CaseStudiesDetail() {
   <ReactMarkdown
   remarkPlugins={[remarkGfm]}
   components={{
-    code({ inline, children }) {
-      if (inline) {
+    code({ pre, children }) {
+      if (pre) {
         return <code className="inline-code">{children}</code>;
       }
       return <>{children}</>;

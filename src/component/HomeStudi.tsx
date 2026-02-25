@@ -5,7 +5,7 @@ interface HomestudyProps{
     stack?: string;
 }
 export default function HomeStudy({title,description,link,stack}: HomestudyProps) {
-  const techString = stack.split(',');
+  const techString = stack.split(',')  ?? [];
   return (
     <article className="case-study">
       <h3>{title  ?? ""}</h3>

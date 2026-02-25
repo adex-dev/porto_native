@@ -2,7 +2,7 @@ import brand from "../assets/logo_akmad.svg";
 import { Navigation } from "../component/Navigation.tsx";
 import ButtonDarkmode from "../component/Buttondarkmode.tsx";
 
-import { useEffect, useState, React } from "react";
+import { useEffect, useState } from "react";
 export default function Headers() {
   const [darkMode, setDarkMode] = useState(() => {
     const saved = localStorage.getItem("theme");
