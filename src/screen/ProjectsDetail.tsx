@@ -26,12 +26,19 @@ export default function ProjectsDetail() {
   <ReactMarkdown
   remarkPlugins={[remarkGfm]}
   components={{
-    code({ inline, children }) {
-      if (inline) {
-        return <code className="inline-code">{children}</code>;
-      }
-      return <>{children}</>;
-    },
+  code({ className, children }) {
+  const isBlock = className?.startsWith("language-");
+
+  if (!isBlock) {
+    return <code className="inline-code">{children}</code>;
+  }
+
+  return (
+    <code className={className}>
+      {children}
+    </code>
+  );
+},
     pre({ children }) {
       const codeEl = children as any;
 

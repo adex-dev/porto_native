@@ -5,7 +5,7 @@ interface ProjectsProps{
     stack?: string;
 }
 export default function ProjectsPropsLayer({title,description,link,stack}: ProjectsProps) {
-  const techString = stack.split(',')  ?? [];
+  const techString = (stack ?? "").split(",");
   return (
     <article className="case-study">
       <h3>{title  ?? ""}</h3>
