@@ -7,6 +7,7 @@ import Projects from "./screen/Projects.tsx";
 import CaseStudiesDetail from "./screen/CaseStudiesDetail.tsx";
 import ProjectsDetail from "./screen/ProjectsDetail.tsx";
 import ExperienceScreen from "./screen/ExperienceScreen.tsx";
+import AboutScreen from "./screen/About.tsx";
 import LoadingLayout from "./layouts/LoadingLayout";
 function App() {
   // const [loading] = useState(true)
@@ -24,7 +25,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/:slug" element={<ProjectsDetail />} />
             <Route path="/experience" element={<ExperienceScreen />} />
-            {/* <Route path="/about" element={<About />} /> */}
+            <Route path="/about" element={<AboutScreen />} />
           </Route>
         </Routes>
     </Suspense>

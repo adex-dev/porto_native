@@ -2,6 +2,7 @@
   "name": "porto",
   "private": true,
   "version": "0.0.0",
+  "homepage":"https://adex-dev.github.io/porto_native/",
   "type": "module",
   "scripts": {
     "dev": "vite",
