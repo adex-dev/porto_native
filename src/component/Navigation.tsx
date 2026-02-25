@@ -3,12 +3,12 @@
         link: string;
     };
 const navMenu: NavItem[] = [
-  { title: "Home", link: "/home" },
-  { title: "Case Studies", link: "/studies" },
-  { title: "Projects", link: "/projects" },
-  { title: "Experience", link: "/experience" },
-  { title: "About", link: "/about" },
-  { title: "Contact", link: "/contact" },
+  { title: "Home", link: "/porto_native/home" },
+  { title: "Case Studies", link: "/porto_native/studies" },
+  { title: "Projects", link: "/porto_native/projects" },
+  { title: "Experience", link: "/porto_native/experience" },
+  { title: "About", link: "/porto_native/about" },
+  { title: "Contact", link: "/porto_native/contact" },
 ];
 export function Navigation(){
    

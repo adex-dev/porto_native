@@ -39,14 +39,14 @@ export default function Home() {
           title="POS System"
           description="Web-based POS system with separated backend services for transaction
         management and <strong>reporting</strong>."
-          link="/case-studies/pos"
+          link="/porto_native/case-studies/pos"
           stack="CodeIgniter,Flask,MySQL"
         />
         <HomeStudy
           title="Mobile POS Application"
           description="Android application used as a client app connected to backend APIs
             for daily operations."
-          link="/case-studies/mobile-pos"
+          link="/porto_native/case-studies/mobile-pos"
           stack="Android,Kotlin,REST API"
         />
       </section>

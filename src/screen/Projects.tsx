@@ -18,14 +18,14 @@ export default function Projects() {
                     title="POS System"
                     description="Web-based POS system with separated backend services for transaction
                     management and <strong>reporting</strong>."
-                    link="/projects/pos"
+                    link="/porto_native/projects/pos"
                     stack="CodeIgniter,Flask,MySQL"
                     />
                     <ProjectsPropsLayer
                     title="Mobile POS Application"
                     description="Android application used as a client app connected to backend APIs
                         for daily operations."
-                    link="/projects/mobile-pos"
+                    link="/porto_native/projects/mobile-pos"
                     stack="Android,Kotlin,REST API"
                     />
             </section>
